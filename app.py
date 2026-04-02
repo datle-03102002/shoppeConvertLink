@@ -78,6 +78,15 @@ def process_conversion(input_url):
 
 # Cài đặt tiêu đề trang web
 st.set_page_config(page_title="Đổi Link Shopee", page_icon="🛍️")
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;} /* Ẩn toàn bộ thanh header chứa icon GitHub */
+            [data-testid="stToolbar"] {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.markdown("<h2 style='text-align: center; color: #ff5722;'>🛍️ ĐỔI LINK SHOPEE ÁP MÃ 20% 25%</h2>", unsafe_allow_html=True)
 st.write("---")
