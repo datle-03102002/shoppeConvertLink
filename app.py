@@ -4,7 +4,7 @@ import urllib.parse
 import streamlit as st
 
 # Thông tin Affiliate của bạn
-MY_AFFILIATE_ID = "17310280315"
+MY_AFFILIATE_ID = "17367310221"
 MY_SUB_ID = "KEM_REVIEW"
 
 def get_original_link(url):
